@@ -1,0 +1,44 @@
+body{
+    background-image: url(../images/diagmonds.png);
+    color: lightgoldenrodyellow;
+    font-family: 'Dosis', sans-serif;
+}
+.jumbotron{
+    background-image: url(../images/geometry2.png);
+    color: darkslategray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#instruct{
+    padding-top: 10px;
+    text-align: center;
+    border: 2px solid lightgoldenrodyellow;
+    font-size: 1.5em;
+}
+
+#infoRow{
+    text-align: center;
+}
+.labelBox{
+    border-bottom: 1px solid lightgoldenrodyellow;
+    padding-bottom: 5px;
+}
+.crystalBtn{
+    position: relative;
+    padding: 30px 5px 5px 0px;
+}
+.crystalBtn:focus{
+    outline: none;
+}
+
+.toast{
+    margin-left: 15px;
+    padding-left: 40px;
+    width: 250px;
+    height: 75px;
+    font-size: 2em;
+    text-align: center;
+    background-image: url(../images/geometry2.png);
+    color: darkslategray;
+}
