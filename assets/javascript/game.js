@@ -1,6 +1,7 @@
 // CRYSTAL COLLECTOR GAME - ADAM SPECKER
 
 $(document).ready(function(){
+
 var btnOneNum=0;
 var btnTwoNum=0;
 var btnThreeNum=0;
@@ -24,9 +25,7 @@ var currentNum=0;
         $("#scoreBox").text(currentNum);
         $("#winLoss").text("Wins : "+wins+" || Losses: "+losses);
     }
-
     reset();
-
 
     // makes buttons wiggle when clicked
     // courtesy of  https://jsfiddle.net/macloo/g39k3h3e/
@@ -81,22 +80,18 @@ var currentNum=0;
        
     });
 
+    // win/loss detector tied to the crystal button class
     $(".crystalBtn").click(function(){
-   
         if (currentNum===targetNum){
             wins ++;
             Materialize.toast("You Win!", 3500);
             reset();
-            
-    
+
         }  else if (currentNum>targetNum){
             losses++;
             Materialize.toast("You lose. :(", 3500);
             reset();
-    
         }  
-    
     });
 
-    
  });

@@ -1,11 +1,12 @@
  # CRYSTAL COLLECTOR TO-DOs
  * better spacing on buttons
  * logic to prevent the same number from being selected by multiple buttons
+ * shorten the underlines so they are only under each word
+ * some sort of end of game celebration, like a shower of gems
 
 # DONES
 * * stop function to prevent it from shaking for 10 seconds after many clicks
- 
- 
+
  # Crystal Collector Pseudocode
 
  ## Buttons
