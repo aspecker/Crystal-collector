@@ -3,6 +3,7 @@
  * logic to prevent the same number from being selected by multiple buttons
  * shorten the underlines so they are only under each word
  * some sort of end of game celebration, like a shower of gems
+ * WHY DO THE JEWELS NOT SHOW UP ON GITHUB PAGES
 
 # DONES
 * * stop function to prevent it from shaking for 10 seconds after many clicks
