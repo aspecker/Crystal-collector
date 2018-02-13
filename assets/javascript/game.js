@@ -1,6 +1,6 @@
 // CRYSTAL COLLECTOR GAME - ADAM SPECKER
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
 var btnOneNum=0;
 var btnTwoNum=0;
@@ -114,4 +114,4 @@ var currentNum=0;
         }, interval);
       }
 
- });
+//  });
