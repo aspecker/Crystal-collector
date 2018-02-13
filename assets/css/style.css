@@ -28,7 +28,6 @@ body{
     text-align: center;
 }
 .labelBox{
-    /* border-bottom: 1px solid lightgoldenrodyellow; */
     text-decoration: underline;
     line-height: 16px;
     padding-bottom: 5px;
@@ -41,9 +40,10 @@ body{
     outline: none;
 }
 .sideImg{
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     margin-top: 30px;
+    margin-right: 5px;
 }
 #buttonRow{
     margin-left: 60px;

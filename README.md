@@ -1,7 +1,4 @@
  # CRYSTAL COLLECTOR TO-DOs
- * logic to prevent the same number from being selected by multiple buttons
-     * have an array with 1-12, use .filter
-
  * some sort of end of game celebration, like a shower of gems
 
 # DONES
@@ -9,6 +6,8 @@
 * fixed images not showing up on github pages
 * better spacing on buttons
 * shorten the underlines so they are only under each word
+* logic to prevent the same number from being selected by multiple buttons
+
 
  # Crystal Collector Pseudocode
 

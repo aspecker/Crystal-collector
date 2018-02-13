@@ -11,13 +11,33 @@ var losses=0;
 var targetNum=0;
 var currentNum=0;
 
-    // resets random numbers and displays them with new score and w/l
+    // resets random numbers to all be different and displays them with new score and win-loss
     function reset(){
+        
         btnOneNum=Math.floor(Math.random() * 12 + 1);
         btnTwoNum=Math.floor(Math.random() * 12 + 1);
         btnThreeNum=Math.floor(Math.random() * 12 + 1);
         btnFourNum=Math.floor(Math.random() * 12 + 1);
         
+        if (btnTwoNum===btnOneNum){
+            while (btnTwoNum===btnOneNum){
+                btnTwoNum=Math.floor(Math.random() * 12 + 1);  
+                }
+        } if (btnThreeNum==btnOneNum||btnTwoNum==btnThreeNum){
+            while (btnThreeNum==btnOneNum||btnTwoNum==btnThreeNum){
+                btnThreeNum=Math.floor(Math.random() * 12 + 1);  
+                }
+        } if (btnFourNum===btnOneNum||btnTwoNum===btnFourNum||btnFourNum===btnThreeNum){
+            while(btnFourNum===btnOneNum||btnTwoNum===btnFourNum||btnFourNum===btnThreeNum){
+                btnFourNum=Math.floor(Math.random() * 12 + 1); 
+                }
+        }
+
+        console.log(btnOneNum);
+        console.log(btnTwoNum);
+        console.log(btnThreeNum);
+        console.log(btnFourNum);
+
         targetNum=Math.floor(Math.random() * 101 + 19);
         currentNum=0;
         $("#targetNumber").text(targetNum);
@@ -25,26 +45,6 @@ var currentNum=0;
         $("#winLoss").text("Wins : "+wins+" || Losses: "+losses);
     }
     reset();
-
-    // makes buttons wiggle when clicked
-    // courtesy of  https://jsfiddle.net/macloo/g39k3h3e/
-
-    function shake(thing) {
-        var interval = 60;
-        var distance = 10;
-        var times = 4;
-      
-        for (var i = 0; i < (times + 1); i++) {
-          $(thing).animate({
-            left:
-              (i % 2 == 0 ? distance : distance * -1)
-          }, interval);
-        }
-        $(thing).animate({
-          left: 0,
-          top: 0
-        }, interval);
-      }
 
     // button click functionality
     $("#btnOne").click(function(){
@@ -90,7 +90,28 @@ var currentNum=0;
             losses++;
             Materialize.toast("Lost in the cavern...", 3500);
             reset();
+
         }  
     });
+        
+    // makes buttons wiggle when clicked
+    // courtesy of  https://jsfiddle.net/macloo/g39k3h3e/
+
+    function shake(thing) {
+        var interval = 60;
+        var distance = 10;
+        var times = 4;
+      
+        for (var i = 0; i < (times + 1); i++) {
+          $(thing).animate({
+            left:
+              (i % 2 == 0 ? distance : distance * -1)
+          }, interval);
+        }
+        $(thing).animate({
+          left: 0,
+          top: 0
+        }, interval);
+      }
 
  });

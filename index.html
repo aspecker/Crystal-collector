@@ -18,10 +18,12 @@
 <body>
 <div class="wrapper">
     <div class="container">
+        
         <div class="jumbotron">
             <h1>Crystal Collector</h1>
         </div>
 
+        <!-- row for instruction box -->
         <div class="row" id="instruct">
             <div class="col-md-2">
                 <img src="./assets/images/diamond-spin.gif" class="sideImg" alt="Turning Gem">
@@ -35,10 +37,11 @@
             </div>
 
             <div class="col-md-2">
-                <img src="./assets/images/diamond-spin.gif" class="sideImg" alt="Turning Gem">
+                <img src="./assets/images/pickaxe-icon.png" class="sideImg" alt="Turning Gem">
             </div>
         </div>
 
+        <!-- row for scores and records -->
         <div class="row" id="infoRow">
             
             <div class="col-md-4">
@@ -47,17 +50,19 @@
             </div>
             
             <div class="col-md-4">
-            <h3 class="labelBox">Score</h3>
-            <h2 id="winLoss"></h2>
+            <h3 class="labelBox">Current Total</h3>
+            <h2 id="scoreBox"></h2>
             </div>
             
             <div class="col-md-4">
-            <h3 class="labelBox">Current Total</h3>
-            <h2 id="scoreBox"></h2>
+            <h3 class="labelBox">Score</h3>
+            <h2 id="winLoss"></h2>
+
             </div>
 
         </div>
 
+        <!--row for crystal buttons-->
         <div id="buttonRow" class="row">
             <div class="col-md-3">
                 <input type="image" class="crystalBtn" id="btnOne" src="./assets/images/Peridot.png" alt="Crystal One"/>
