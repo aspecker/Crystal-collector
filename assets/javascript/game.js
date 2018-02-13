@@ -18,8 +18,7 @@ var currentNum=0;
         btnThreeNum=Math.floor(Math.random() * 12 + 1);
         btnFourNum=Math.floor(Math.random() * 12 + 1);
         
-        
-        targetNum=Math.floor(Math.random() * 101 + 19);;
+        targetNum=Math.floor(Math.random() * 101 + 19);
         currentNum=0;
         $("#targetNumber").text(targetNum);
         $("#scoreBox").text(currentNum);
@@ -84,12 +83,12 @@ var currentNum=0;
     $(".crystalBtn").click(function(){
         if (currentNum===targetNum){
             wins ++;
-            Materialize.toast("You Win!", 3500);
+            Materialize.toast("You escaped with your haul!", 3500);
             reset();
 
         }  else if (currentNum>targetNum){
             losses++;
-            Materialize.toast("You lose. :(", 3500);
+            Materialize.toast("Lost in the cavern...", 3500);
             reset();
         }  
     });
