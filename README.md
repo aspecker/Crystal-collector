@@ -26,10 +26,12 @@
  ## JQUERY NOTES TO HELP WITH ASSIGNMENT
  
  *    $("element") - element selector, works on ids classes and elements
-  
-*        $("p").on("click", function(){
-*        $(this).function();
-*        });     - "click" can be substituted for a variety of triggers
+```  
+        $("p").on("click", function(){
+        $(this).function();
+        });
+```
+*  "click" can be substituted for a variety of triggers
 
 *     $("element").toggle() switches between hide and show
 
